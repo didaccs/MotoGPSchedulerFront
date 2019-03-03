@@ -5,6 +5,8 @@
 .navbar{
   padding-right: 6%;
   padding-left: 6%;
+  padding-bottom: 0px;
+  padding-top: 0px;
   position: fixed;
   top: 0;
   right: 0;
@@ -16,9 +18,12 @@
   padding-left: 2.5rem;
   font-size: large;
 }
-.container-app{
-  margin-top: 90px;
+.nav-item .nav-link{
+  color: black;
 }
-.navbar{
-
+.nav-link.active{
+  border-bottom: 2px solid;
+}
+.container-app{
+  margin-top: 110px;
 }

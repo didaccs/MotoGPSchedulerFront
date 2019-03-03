@@ -1,12 +1,3 @@
-.container-fluid{
-  margin-top: 2%;
-}
-.navbar{
-    padding-top: 0px;
-    padding-bottom: 0px;
-    background: lightslategray;
-    color: #ffffff;
-}
 .card-columns {
   column-count: 4;  
   /* margin-left: 5%;

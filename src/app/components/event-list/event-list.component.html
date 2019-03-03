@@ -1,123 +1,15 @@
 <div class="container-fluid">
   <div class="card-columns">
-    <div class="card">
-      <img class="card-img-top" src="/assets/circuits/valencia.png" alt="Card image cap">
-      <div class="card-img-overlay align-bottom">
-        <h5 class="card-title text-img-title">Gran Premio Motul</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Circuit Ricardo Tormo</h5>
-        <p class="card-text">15 Noviembre 2019</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="/assets/circuits/qatar.png" alt="Card image cap">
-      <div class="card-img-overlay align-bottom">
-        <h5 class="card-title text-img-title">Qatar Grand Prix</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Losail International Circuit</h5>
-        <p class="card-text">08 Marzo 2019</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="/assets/circuits/sepang.png" alt="Card image cap">
-      <div class="card-img-overlay align-bottom">
-        <h5 class="card-title text-img-title">Shell Malaysia Motorcycle Grand Prix</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Malaysia Grand Prix</h5>
-        <p class="card-text">01 Noviembre 2019</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="/assets/circuits/valencia.png" alt="Card image cap">
-      <div class="card-img-overlay align-bottom">
-        <h5 class="card-title text-img-title">Gran Premio Motul</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Circuit Ricardo Tormo</h5>
-        <p class="card-text">15 Noviembre 2019</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="/assets/circuits/qatar.png" alt="Card image cap">
-      <div class="card-img-overlay align-bottom">
-        <h5 class="card-title text-img-title">Qatar Grand Prix</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Losail International Circuit</h5>
-        <p class="card-text">08 Marzo 2019</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="/assets/circuits/sepang.png" alt="Card image cap">
-      <div class="card-img-overlay align-bottom">
-        <h5 class="card-title text-img-title">Shell Malaysia Motorcycle Grand Prix</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Malaysia Grand Prix</h5>
-        <p class="card-text">01 Noviembre 2019</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="/assets/circuits/valencia.png" alt="Card image cap">
-      <div class="card-img-overlay align-bottom">
-        <h5 class="card-title text-img-title">Gran Premio Motul</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Circuit Ricardo Tormo</h5>
-        <p class="card-text">15 Noviembre 2019</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="/assets/circuits/qatar.png" alt="Card image cap">
-      <div class="card-img-overlay align-bottom">
-        <h5 class="card-title text-img-title">Qatar Grand Prix</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Losail International Circuit</h5>
-        <p class="card-text">08 Marzo 2019</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="/assets/circuits/sepang.png" alt="Card image cap">
-      <div class="card-img-overlay align-bottom">
-        <h5 class="card-title text-img-title">Shell Malaysia Motorcycle Grand Prix</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Malaysia Grand Prix</h5>
-        <p class="card-text">01 Noviembre 2019</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="/assets/circuits/valencia.png" alt="Card image cap">
-      <div class="card-img-overlay align-bottom">
-        <h5 class="card-title text-img-title">Gran Premio Motul</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Circuit Ricardo Tormo</h5>
-        <p class="card-text">15 Noviembre 2019</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="/assets/circuits/qatar.png" alt="Card image cap">
-      <div class="card-img-overlay align-bottom">
-        <h5 class="card-title text-img-title">Qatar Grand Prix</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Losail International Circuit</h5>
-        <p class="card-text">08 Marzo 2019</p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="/assets/circuits/sepang.png" alt="Card image cap">
-      <div class="card-img-overlay align-bottom">
-        <h5 class="card-title text-img-title">Shell Malaysia Motorcycle Grand Prix</h5>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Malaysia Grand Prix</h5>
-        <p class="card-text">01 Noviembre 2019</p>
+    <div *ngFor="let event of events">
+      <div class="card">
+        <img class="card-img-top" [src]="getImagePath(event) | safeHtml" alt="Card image cap">
+        <div class="card-img-overlay align-bottom">
+          <h5 class="card-title text-img-title">{{event.name}}</h5>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{event.circuit.name}}</h5>
+          <p class="card-text">{{event.date|date}}</p>
+        </div>
       </div>
     </div>
   </div>
