@@ -1,11 +1,23 @@
 .container-fluid{
   margin-top: 2%;
 }
+.navbar{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: lightslategray;
+    color: #ffffff;
+}
 .card-columns {
-  column-count: 5;  
+  column-count: 4;  
+  /* margin-left: 5%;
+  margin-right: -15%; */
 }
 .text-img-title{
   color: #fff;
-  text-shadow: rgba(0,0,0,.5) 1px 1px 1px;
+  text-shadow: rgba(0,0,0,1) 2px 2px 2px;
   font-weight: 600;
+}
+.card-img-overlay{
+  padding-top: 0;
+  text-align: center;
 }
