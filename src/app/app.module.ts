@@ -1,18 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
+import { routing, AppRoutingProviders } from './app.routing';
 import { AppComponent } from './app.component';
+import { EventListComponent } from './components/event-list/event-list.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EventListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
-  providers: [],
+  providers: [
+    AppRoutingProviders
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

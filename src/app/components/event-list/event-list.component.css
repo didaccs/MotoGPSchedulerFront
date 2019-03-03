@@ -1,0 +1,11 @@
+.container-fluid{
+  margin-top: 2%;
+}
+.card-columns {
+  column-count: 5;  
+}
+.text-img-title{
+  color: #fff;
+  text-shadow: rgba(0,0,0,.5) 1px 1px 1px;
+  font-weight: 600;
+}
