@@ -1,0 +1,10 @@
+.card-img-top{
+  border-bottom-left-radius: calc(0.5rem - 1px);
+  border-bottom-right-radius: calc(0.5rem - 1px);
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0.5rem - 1px);
+}
+.jumbotron-fluid{
+  background-color: #F8F9FA;
+  padding: 2rem 2rem;
+}

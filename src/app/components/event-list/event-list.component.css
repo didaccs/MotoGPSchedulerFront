@@ -12,3 +12,8 @@
   padding-top: 0;
   text-align: center;
 }
+a.card,
+a.card:hover {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,3 +1,28 @@
-<p>
-  event-detail works!
-</p>
+<div class="container-fluid" *ngIf="event">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">{{event.name}}</h1>
+      
+    
+  <div class="row">
+    <div class="col">
+      <img class="card-img-top" [src]="getImagePath(event) | safeHtml" alt="event.circuit.name">
+    </div>
+    <div class="col">
+      <h1><span class="flag-icon flag-icon-ad"></span></h1>
+      
+
+
+    </div>      
+  </div>
+  <div class="row">
+    <div class="col">
+      Circuit info
+    </div>
+    <div class="col">
+      Record info
+    </div>
+  </div>
+</div>
+</div>
+</div>

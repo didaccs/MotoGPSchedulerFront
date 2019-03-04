@@ -19,5 +19,9 @@ export class EventService {
 
     getEvent(id): Observable<any> {
       return this._http.get(this.url + 'EventScheduler/' + id, {headers: this.headers});
-  }
+    }
+
+    getImage(imageName) {
+        return 'http://localhost:61678/Resources/' + imageName;
+    }
 }

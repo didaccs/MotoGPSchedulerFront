@@ -1,3 +1,4 @@
+import { EventDetailComponent } from './components/event-detail/event-detail.component';
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -9,7 +10,7 @@ const appRoutes: Routes = [
     {path: '', component: EventListComponent},
     {path: 'home', component: EventListComponent},
     {path: 'calendar', component: EventListComponent},
-    // {path: 'perfil/:id', component: ProfileComponent , canActivate: [ UserGuard]},
+    {path: 'detail/:id', component: EventDetailComponent},
     {path: '**', component: EventListComponent}
 ];
 

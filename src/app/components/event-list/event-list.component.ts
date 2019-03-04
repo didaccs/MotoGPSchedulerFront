@@ -31,8 +31,9 @@ export class EventListComponent implements OnInit {
         }
     );
   }
+
   getImagePath(event) {
-    return 'http://localhost:61678/Resources/' + event.circuit.imageName;
+    return this._eventService.getImage(event.circuit.imageName);
   }
 
 }
