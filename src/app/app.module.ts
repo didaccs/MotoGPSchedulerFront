@@ -8,6 +8,7 @@ import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 import { EventDetailComponent } from './components/event-detail/event-detail.component';
 import { MeterToKmPipe } from './pipes/meter-to-km.pipe';
 import { TimeToStringPipe } from './pipes/time-to-string.pipe';
+import { UnderConstructionComponent } from './components/under-construction/under-construction.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TimeToStringPipe } from './pipes/time-to-string.pipe';
     SafeHtmlPipe,
     EventDetailComponent,
     MeterToKmPipe,
-    TimeToStringPipe
+    TimeToStringPipe,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserModule,
