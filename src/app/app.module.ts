@@ -6,13 +6,17 @@ import { EventListComponent } from './components/event-list/event-list.component
 import { HttpClientModule } from '@angular/common/http';
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 import { EventDetailComponent } from './components/event-detail/event-detail.component';
+import { MeterToKmPipe } from './pipes/meter-to-km.pipe';
+import { TimeToStringPipe } from './pipes/time-to-string.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     EventListComponent,
     SafeHtmlPipe,
-    EventDetailComponent
+    EventDetailComponent,
+    MeterToKmPipe,
+    TimeToStringPipe
   ],
   imports: [
     BrowserModule,

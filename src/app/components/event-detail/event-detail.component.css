@@ -8,3 +8,13 @@
   background-color: #F8F9FA;
   padding: 2rem 2rem;
 }
+.col-center{
+  text-align: center;
+  align-content: center;
+}
+.full-height{
+  height: 35%;
+}
+.verticalLine {
+  border-left:1px solid rgba(0,0,0,.1);
+}
