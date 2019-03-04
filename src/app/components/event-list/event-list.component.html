@@ -7,8 +7,19 @@
           <h5 class="card-title text-img-title">{{event.name}}</h5>
         </div>
         <div class="card-body">
-          <h5 class="card-title">{{event.circuit.name}}</h5>
-          <p class="card-text">{{event.date|date}}</p>
+          <div class="row">
+              <h4 class="card-title">{{event.circuit.name}}</h4>
+          </div>
+          <div class="row">
+            <h5>{{event.circuit.country.name}}</h5>
+            
+            <div class="col">
+                <h5><span [ngClass]="'flag-icon flag-icon-' + event.circuit.country.isoCode"></span></h5>
+            </div>
+          </div>
+          <div class="row">
+              <p class="card-text">{{event.date|date}}</p>
+          </div>
         </div>
       </a>
     </div>
